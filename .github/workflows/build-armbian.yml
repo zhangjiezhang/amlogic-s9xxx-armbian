@@ -303,8 +303,8 @@ jobs:
               ./compile.sh RELEASE=${{ inputs.set_release }} BOARD=odroidn2 BRANCH=current BUILD_MINIMAL=no \
                            BUILD_ONLY=default HOST=armbian BUILD_DESKTOP=no EXPERT=yes KERNEL_CONFIGURE=no \
                            COMPRESS_OUTPUTIMAGE="sha" SHARE_LOG=yes \
-                           SHOW_DEBUG=true SHOW_COMMAND=true SHOW_TRAPS=true SHOW_GROUPS=true SHOW_FASTHASH=true \
-                           SHOW_EXTENSIONS=true SHOW_EXTENSIONS_TRACE=true SHOW_GIT=true SHOW_CCACHE=true SHOW_AGGREGATION=true
+                           SHOW_DEBUG=yes SHOW_COMMAND=yes SHOW_TRAPS=yes SHOW_GROUPS=yes SHOW_FASTHASH=yes \
+                           SHOW_EXTENSIONS=yes SHOW_EXTENSIONS_TRACE=yes SHOW_GIT=yes SHOW_CCACHE=yes SHOW_AGGREGATION=yes
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Organize files and clear space
